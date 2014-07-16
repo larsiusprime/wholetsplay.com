@@ -1,0 +1,189 @@
+body {
+    margin: 0px;
+}
+
+div#container {
+    background-color: White;
+}
+
+article h1 {
+    font-family: 'Raleway', 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: 26px;
+}
+
+article p {
+    text-indent: 2em;
+}
+article p.noIndent {
+    text-indent: 0px;
+}
+
+#navigation {
+    font-family: 'Open Sans';
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    z-index: 999;
+}
+#navigation a {
+    background-color: White;
+    color: #0099e5;
+    text-decoration: none;
+    
+    border-color: White;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    padding: 10px 15px;
+    
+    transition: border-color 0.2s, color 0.2s;
+    -moz-transition: border-color 0.2s, color 0.2s; /* Firefox 4 */
+    -webkit-transition: border-color 0.2s, color 0.2s; /* Safari and Chrome */
+    -o-transition: border-color 0.2s, color 0.2s; /* Opera */
+}
+
+#navigation a:hover {
+    color: #08C;
+    text-decoration: none;
+}
+
+.btn-navigate {
+    width: 100%;
+    text-align: center;
+}
+
+.btn-navigate a {
+    color: #3498DB;
+    text-decoration: none;
+    border-color: #3498DB;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    padding: 10px 15px;
+    transition: border-color 0.4s, color 0.4s;
+    -moz-transition: border-color 0.4s, color 0.4s;
+    -webkit-transition: border-color 0.4s, color 0.4s;
+    -o-transition: border-color 0.4s, color 0.4s;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.btn-navigate a:hover {
+    color: Black;
+    text-decoration: none;
+    border-color: Black;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    padding: 10px 15px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/*full-size*/
+@media screen and (min-width: 800px) {
+    article {
+        font-family: 'Open Sans';
+            
+        text-align: left;
+        line-height: 2em;
+        
+        padding: 5px;
+        width: 700px;
+        padding-left: 50%;
+        margin-left: -350px;
+        margin-right: 350px;
+    }
+
+    article img {
+        display: block;
+        margin: 50px auto 50px auto;
+        max-width: 700px;
+    }
+
+    .cover {
+        background-color: #3498db;
+        color: White;
+        padding-top: 10%;
+        padding-bottom: 10px;
+        padding-left: 200px;
+        padding-right: 200px;
+        line-height: 1em;
+    }
+    .cover h1 {
+        font-family: 'Raleway', 'Open Sans', sans-serif;
+        font-weight: 200;
+        font-size: 56px;
+    }
+    .cover h2 {
+        font-family: 'Raleway', 'Open Sans', sans-serif;
+        font-weight: 200;
+        margin-left: 40px;
+        font-weight: 200;
+        font-size: 24px;
+    }
+}
+
+/*smaller*/
+@media screen and (max-width: 800px) {
+    article {
+        font-family: 'Open Sans';
+        text-align: left;
+        line-height: 2em;
+        padding: 5px 20px 5px 20px;
+    }
+
+    article img {
+        display: block;
+        margin: 50px auto 50px auto;
+        max-width: 100%;
+    }
+
+    .cover {
+        background-color: #3498db;
+        color: White;
+        padding-top: 10%;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        line-height: 1em;
+    }
+    .cover h1 {
+        font-family: 'Raleway', 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 42px;
+        line-height: 1em;
+    }
+    .cover h2 {
+        font-family: 'Raleway', 'Open Sans', sans-serif;
+        font-weight: 200;
+        margin-left: 40px;
+        font-weight: 200;
+        font-size: 24px;
+        line-height: 1.5em;
+    }
+}
+
+
+.homeLink {
+    text-decoration: none;
+}
+
+
+article a {
+    color: #0099e5;
+    text-decoration: none;
+    border-bottom: 1px dotted #0099e5;
+    
+    transition: border-bottom-color 0.2s, color 0.2s;
+    -moz-transition: border-bottom-color 0.2s, color 0.2s; /* Firefox 4 */
+    -webkit-transition: border-bottom-color 0.2s, color 0.2s; /* Safari and Chrome */
+    -o-transition: border-bottom-color 0.2s, color 0.2s; /* Opera */
+}
+
+article a:hover {
+    color: #08C;
+    text-decoration: none;
+    border-bottom-color: #08C;
+}
