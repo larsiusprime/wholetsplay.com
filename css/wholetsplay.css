@@ -1,0 +1,73 @@
+body {
+	margin-top: 50px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+	font-family: 'Raleway', 'Open Sans', sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ABAAAA;
+}
+
+th, td {
+	padding: 4px;
+}
+
+.contact table {
+	width: 75%;
+}
+
+.contact input, textarea {
+	width: 100%;
+}
+
+.contact {
+	width: 100%;
+}
+
+.contact table, th, td {
+    border: none;
+}
+
+.left{
+	text-align: right;
+}
+
+.contact form {
+	margin-bottom: 10px
+}
+
+.footer{
+	background-color: #E4DEDE;
+	text-align: center;
+	font-size: smaller;
+	padding: 2px;
+}
+
+.navbar-default {
+	background-color: #3498db;
+	border-color: #2872A5;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover, .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+	background-color: #2872A5;
+	color: #FFF;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: #000;
+}
+
+.navbar-default .navbar-brand {
+	color: #FFF;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #E0E0E0;
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Who Let's Play</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Raleway:400,200" rel="stylesheet" type="text/css">
+    <link href="css/wholetsplay.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Who Let's Play</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="active"><a href="#">Contact &amp; Support</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div id="main_content" class="container">
+      <div id="support">
+        <h1>Supporting Who Let's Play</h1>
+        <p>
+          If you want to help, you can:
+          <ol>
+              <li>Get in touch, use the contact form below</li>
+              <li><a href="#donate">Donate some money</a></li>
+              <li>Volunteer your time: we need web devs and lawyers. I've got some of both, but the more the merrier.</li>
+              <li>Developers -- add your name to the wiki, and make your permission status known.</li>
+              <li>Journalists -- write an article about #WhoLetsPlay!</li>
+              <li>Youtubers -- talk about #WhoLetsPlay on your show.</li>
+              <li>Everyone -- get the word out about #WhoLetsPlay. Tweet, share, etc.</li>
+          </ol>
+        </p>
+      </div>
+      <div class="contact">
+        <h1>Contact Us</h1>
+        <form name="contact" method="post" action="contactengine.php">
+          <table>
+            <tr>
+              <td class="left"><label for="name">Name:</label></td>
+              <td><input type="text" name="name" required="true" /></td>
+            </tr>
+            <tr>
+              <td class="left"><label for="email">Email:</label></td>
+              <td><input type="email" name="email" required="true" /></td>
+            </tr>
+            <tr>
+              <td class="left"><label for="message">Message:</label></td>
+              <td><textarea name="message" required="true" rows="8"></textarea></td>
+            </tr>
+            <tr>
+              <td class="left"><label for="check">2+4:</label></td>
+              <td><input type="number" name="check" required="true" /></td>
+            </tr>
+          </table>
+          <
+          <input type="submit" name="submit" value="Submit" class="submit-button" onclick="return validate();">
+          <script type="text/javascript">
+            function validate() {
+              var emailRegEx = /^.*@.*$/;
+
+              var name = document.forms["contact"]["name"].value;
+              var email = document.forms["contact"]["email"].value;
+              var message = document.forms["contact"]["message"].value;
+              var check = document.forms["contact"]["check"].value;
+
+              var returnVal = true;
+              var errorMessage = "";
+
+              if(name.length < 1)
+              {
+                returnVal = false;
+                errorMessage += "- Name can't be empty"
+              }
+              if(!emailRegEx.test(email))
+              {
+                returnVal = false;
+                if(errorMessage.length > 0)
+                  errorMessage += "\n";
+                errorMessage += "- Email address is not valid"
+              }
+              if(message.length < 1)
+              {
+                returnVal = false;
+                if(errorMessage.length > 0)
+                  errorMessage += "\n";
+                errorMessage += "- Message can't be empty"
+              }
+              if(check.length < 1)
+              {
+                returnVal = false;
+                if(errorMessage.length > 0)
+                  errorMessage += "\n";
+                errorMessage += "- Check can't be empty"
+              }
+
+              if(returnVal)
+                return returnVal
+
+              alert(errorMessage);
+
+              return false;
+            }
+          </script>
+        </form>
+      </div>
+      
+    </div>
+    <div class="footer">
+      &copy; All rights reserved Who Let's Play 2014-2016
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
