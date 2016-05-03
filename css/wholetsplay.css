@@ -23,7 +23,7 @@ th, td {
 	width: 75%;
 }
 
-.contact input, textarea {
+.contact input, .contact textarea {
 	width: 100%;
 }
 
@@ -31,7 +31,7 @@ th, td {
 	width: 100%;
 }
 
-.contact table, th, td {
+.contact table, .contact th, .contact td {
     border: none;
 }
 
