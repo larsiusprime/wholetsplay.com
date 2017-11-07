@@ -1,6 +1,5 @@
 <?php
 
-$EmailFrom = "no-reply@wholetsplay.com";
 $EmailTo = "contact@wholetsplay.com";
 $Subject = "Contact from Who Let's Play";
 $Name = Trim(stripslashes($_POST['name'])); 
@@ -27,7 +26,7 @@ $Body .= "Message: " .  $Message;
 $Body .= "\n";
 
 // send email 
-$success = mail($EmailTo, $Subject, $Body, "From: <$EmailFrom>");
+$success = mail($EmailTo, $Subject, $Body, "From: <$Email>");
 
 // redirect to success page 
 if ($success){
